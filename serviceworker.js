@@ -15,6 +15,7 @@ self.addEventListener("install", function (event) {
         "/members/morten.png",
         "/members/olivia.png",
         "/members/nina.png",
+        "/members/mikkel.png",
       ]);
     })
   );
