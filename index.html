@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Implementation of objectlist</title>
-    <link rel="stylesheet" href="mystyle.css">
-</head>
+    <link rel="stylesheet" href="mystyle.css" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
 
-<body>
+  <body>
     <h2>Members</h2>
     <div id="output"></div>
     <div id="error"></div>
 
     <!-- <script src="data.js"></script> -->
     <script src="javascript.js"></script>
-</body>
-
+    <script>
+      if ("serviceWorker" in navigator) {
+        console.log("serviceworker is available");
+        navigator.serviceWorker.register("/members/serviceworker.js");
+      } else {
+        console.log("serviceworker is Not available");
+      }
+    </script>
+  </body>
 </html>
-

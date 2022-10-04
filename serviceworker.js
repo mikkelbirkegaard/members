@@ -10,8 +10,8 @@ self.addEventListener("install", function (event) {
         "/members/",
         "/members/index.html",
         "/members/morten.png",
-        "/members/nina.png",
         "/members/olivia.png",
+        "/members/nina.png",
       ]);
     })
   );
@@ -22,7 +22,7 @@ self.addEventListener("install", function (event) {
 self.addEventListener("fetch", function (event) {
   event.respondWith(
     fetch(event.request).catch(() =>
-      caches.open(cacheName).then((cache) => cache.match(event.request))
+      caches.open(memberCache).then((cache) => cache.match(event.request))
     )
   );
 });
