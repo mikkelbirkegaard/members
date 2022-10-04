@@ -9,6 +9,7 @@ self.addEventListener("install", function (event) {
       return cache.addAll([
         "/members/",
         "/members/index.html",
+        "/members/mystyle.css",
         "/members/morten.png",
         "/members/olivia.png",
         "/members/nina.png",
