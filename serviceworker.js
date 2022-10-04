@@ -10,6 +10,8 @@ self.addEventListener("install", function (event) {
         "/members/",
         "/members/index.html",
         "/members/mystyle.css",
+        "/members/javascript.js",
+        "/members/members.json",
         "/members/morten.png",
         "/members/olivia.png",
         "/members/nina.png",
